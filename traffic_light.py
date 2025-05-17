@@ -5,12 +5,11 @@
 # -*- coding: utf-8 -*-
 
 import numpy as np
-import cv2, rospy, time, os, math
+import cv2, rospy
 from sensor_msgs.msg import Image
 from xycar_msgs.msg import XycarMotor
 from cv_bridge import CvBridge
-from sensor_msgs.msg import LaserScan
-import matplotlib.pyplot as plt
+
 
 # ROI 설정값
 ROI_Y1, ROI_Y2 = 63, 97
@@ -52,7 +51,7 @@ class GreenLightStarter:
         # 차량 제어 명령 설정
         if self.green_detected:
             self.motor_msg.angle = 0
-            self.motor_msg.speed = 20  # 출발 속도
+            self.motor_msg.speed = 80  # 출발 속도
         else:
             self.motor_msg.angle = 0
             self.motor_msg.speed = 0  # 정지
