@@ -3,7 +3,7 @@
 
 import rospy, cv2, numpy as np
 from sensor_msgs.msg import Image
-from xycar_motor.msg import xycar_motor
+from xycar_motor.msg import XycarMotor
 from cv_bridge import CvBridge
 
 class GreenLightStarter:
