@@ -30,7 +30,7 @@ class GreenLightStarter:
         # ROS 이미지 → OpenCV 이미지
         frame = self.bridge.imgmsg_to_cv2(data, "bgr8")
 
-        # 신호등 ROI 추출
+        # 신호등 ROI 추출 
         roi = frame[ROI_Y1:ROI_Y2, ROI_X1:ROI_X2]
 
         # HSV 변환
@@ -85,7 +85,7 @@ class GreenLightStarter:
     def image_callback(self, data):
         frame = self.bridge.imgmsg_to_cv2(data, "bgr8")
 
-        # 신호등 ROI 영역 설정
+        # 신호등 ROI 영역 설정 #cam_test.py에[ 코드를 추가해서 사각형 영역을 잡아서 미리 찾아둠
         roi = frame[63:97, 392:431]
 
         # HSV 변환 및 초록색 필터링
