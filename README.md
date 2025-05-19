@@ -32,7 +32,7 @@ ROI = frame[63:97, 392:431] 초록색
 
 콘인식 (https://codezaram.tistory.com/entry/python-Threshold%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%98%EC%97%AC)이 블로그 참고 중
 
-canny 보다 일반 thresholding이 콘인식 더 정확한거 같다고 하여서 이걸로 한번 진행
+canny 보다 일반 thresholding이 콘인식 더 정확한거 같다고 하여서 이걸로 한번 진행(canny 사용시 차선도 인식?)
 
 경로는 블로그의 다음 내용 참고
 
